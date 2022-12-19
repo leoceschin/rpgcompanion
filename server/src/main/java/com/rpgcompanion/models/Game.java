@@ -1,11 +1,9 @@
 package com.rpgcompanion.models;
 
 import java.util.List;
-import java.util.UUID;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -15,8 +13,7 @@ import jakarta.persistence.Table;
 public class Game {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private Long chatId;
     @OneToMany
     private List<Player> players;
     private GameStatus gameStatus;
@@ -24,12 +21,12 @@ public class Game {
     public Game() {
     }
 
-    public UUID getId() {
-        return id;
+    public Long getId() {
+        return chatId;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
+    public void setId(Long chatId) {
+        this.chatId = chatId;
     }
 
     public List<Player> getPlayers() {
@@ -46,6 +43,14 @@ public class Game {
 
     public void setGameStatus(GameStatus gameStatus) {
         this.gameStatus = gameStatus;
+    }
+
+    public Long getChatId() {
+        return chatId;
+    }
+
+    public void setChatId(Long chatId) {
+        this.chatId = chatId;
     }
 
     
