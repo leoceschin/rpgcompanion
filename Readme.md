@@ -27,7 +27,7 @@ Ex:
 
 ### Rolagem de dados
 Para rolar os dados o comando a seguir deve ser usado.
-````
+```
 !rpg roll 2d6 10
 ```
 | comando | uso |
