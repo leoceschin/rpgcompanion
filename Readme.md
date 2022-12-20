@@ -6,7 +6,7 @@ Api para salvar status dos jogadores, rolagem de dados e danos.
 Feito usando Spring Boot
 
 ## Cliente
-Bot do discord feito com nodeJS, consumindo e enviando dados para a api
+Bot do discord feito com python, consumindo e enviando dados para a api
 
 ## Funcionamento
 
@@ -16,13 +16,13 @@ Após o comando, cada jogador deverá enviar seu nome e a quantidade de vida de 
 A mensagem precisa ser enviada com o prefixo "!rpg" seguido do comando e os argumentos caso sejam necessários.
 Ex:
 ```
-!rpg addPlayer Jailson 23
+!rpg addplayer Jailson 23
 ```
 | comando | uso |
 |---------|-----|
 | !rpg | prefixo |
-| addPlayer | comando |
-| Jailson | nome do jogador |
+| addplayer | comando |
+| jailson | nome do jogador |
 | 23 | Pontos de vida |
 
 ### Rolagem de dados
@@ -40,12 +40,13 @@ Para rolar os dados o comando a seguir deve ser usado.
 ### Adicionar dano
 Para adicionar dano a um personagem utilize o seguinte comando
 ```
-!rpg addDamage Jailson 2d6 3
+!rpg adddamage Jailson 2d6 3
 ```
 | comando | uso |
 |---------|-----|
 | !rpg | prefixo |
-| addDamage | comando |
-| JJailson | nome do player |
+| adddamage | comando |
+| jailson | nome do player |
 | 2d6 | 2(quantidade de rolagens) x d6(tipo do dado) |
 | 3 | Pontos adicionais |
+

@@ -58,7 +58,7 @@ public class PlayerService {
         if(player.getLifePoints() <= 0){
             player.setStatus(PlayerStatus.DEAD);
             playerRepository.save(player);
-            return (player.getName() + " está morto! Que dó!");
+            return (player.getName() + " morreu! Que pena!");
         }else{
             playerRepository.save(player);
             return (player.getName() + " recebeu "+ damage + " de dano e ficou com "+ player.getLifePoints()+" de vida!");
