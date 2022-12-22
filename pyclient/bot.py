@@ -25,10 +25,6 @@ async def on_ready():
     print(f'{bot.user} has connected to Discord!')
 
 @bot.command()
-async def oi(ctx):
-    await ctx.send("oi")
-
-@bot.command()
 async def gameinit(ctx):
     id = ctx.message.channel.id
     """

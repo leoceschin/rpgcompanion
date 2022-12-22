@@ -11,7 +11,7 @@ Bot do discord feito com python, consumindo e enviando dados para a api
 ## Funcionamento
 
 ### Inicio
-No inicio o mestre envia o comando "!rpg init" para iniciar uma nova partida.
+No inicio o mestre envia o comando "!rpg gmeinit" para iniciar uma nova partida.
 Após o comando, cada jogador deverá enviar seu nome e a quantidade de vida de cada um.
 A mensagem precisa ser enviada com o prefixo "!rpg" seguido do comando e os argumentos caso sejam necessários.
 Ex:
